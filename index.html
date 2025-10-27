@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>You live in my heart 💘</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio (ضع ملف music.mp3 في نفس المجلد أو غيّر المسار) -->
+    <audio id="bg-audio" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+        <!-- إذا أردت رابط مباشر: ضع هنا رابطًا لملف mp3 -->
+    </audio>
+
+    <!-- زر تشغيل/إيقاف (بعض المتصفحات تمنع التشغيل التلقائي) -->
+    <button id="audio-toggle" aria-label="Toggle music" title="Toggle music">▶︎</button>
+
+    <!-- Canvas النجوم + الألعاب النارية -->
+    <canvas id="scene"></canvas>
+
+    <!-- الرسالة المركزية التي تظهر عند الانفجار -->
+    <div id="message" role="status" aria-live="polite">
+        <div class="msg-inner">
+            I love uu…u live in my heart 💘🫶🥀🥀🥀
+        </div>
+    </div>
+
+    <!-- قليل من الإرشاد المرئي (اختياري، يختفي بعد تحميل الصفحة) -->
+    <div id="hint">اضغط على النجوم ✨</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
